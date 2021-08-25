@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Editor de Memes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body class="">
+
+                          <!-- ♣ HEADER ♣ -->
+
+        <header>
+            <h1>Editor de Memes</h1>
+            <div class="">
+                <button class="" id=""><i class=""></i>Imagen</button>
+                <button class="" id=""><i class=""></i>Texto</button>
+                <button class="" id=""><i class=""></i>Modo Oscuro</button>
+                <button class="" id=""><i class=""></i>Modo Claro</button>
+            </div>
+        </header>
+
+
+        <section class="">
+
+            <main>
+                <div class="" id="">
+                    <p id="top-text" class="">Top Text</p>
+                    <div src alt id="meme"></div>
+                    <p id="bottom-text" class="">Bottom Text</p>
+                    
+                </div>
+
+                <button type="" class="" id=""><i class=""></i>Descargar Meme</button>
+
+            </main>
+
+
+
+
+        <aside class="" id="">
+           <button type="" class="" id=""><i class=""></i></button>
+
+            <!-- ♦ IMG EDITOR ♦ -->
+
+            <section class="editor-img" id="">
+
+                <h2 class="title">IMAGEN</h2>
+
+                <div class="">
+                    <h3>URL</h3>
+                    <input type="text" class="" id=""> 
+                    
+                </div>
+
+
+                <!-- ♠ Background ♠ -->
+
+                <div class="">
+                    <h3>FONDO</h3>
+                    <div class="">
+                        <div class="">
+                            <input type="color" id="" value="">
+                            <span id="">#FFFFF</span>
+                        </div>
+
+                        <div class="">
+                            <select id="" class="">
+                            <option value="unset">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ♠ Filters ♠ -->
+
+                <div class="1">
+                    <h3>FILTROS</h3>
+                    <div class="">
+                        <label for="brightness">BRILLO</label>
+                        <input type="range" id="brightness" min="0" max="1" value="1" step="0.1"> 
+                    </div>
+                    <div class="">
+                        <label for="opacity">OPACIDAD</label>
+                        <input type="range" id="opacity" min="0" max="1" value="1" step="0.1">
+                    </div>
+                    <div class="">
+                        <label for="contrast">CONTRASTE</label>
+                        <input type="range" id="contrast" min="100" max="1000" value="100">
+                    </div>
+                    <div class="">
+                        <label for="blur">DESENFOQUE</label>
+                        <input type="range" id="blur" min="0" max="10" value="0" step="0.1">
+                    </div>
+                    <div class="">
+                        <label for="grayscale">ESCALA DE GRISES</label>
+                        <input type="range" id="grayscale" min="0" max="100" value="0">
+                    </div>
+                    <div class="">
+                        <label for="sepia">SEPIA</label>
+                        <input type="range" id="sepia" min="0" max="100" value="0">
+                    </div>
+                    <div class="">
+                        <label for="hue">HUE</label>
+                        <input type="range" id="hue" min="0" max="360" value="0">
+                    </div>
+                    <div class="">
+                        <label for="saturate">SATURADO</label>
+                        <input type="range" id="saturate" min="100" max="1000" value="100" step="10">
+                    </div>
+                    <div class="">
+                        <label for="invert">NEGATIVO</label>
+                        <input type="range" id="invert" min="0" max="1" value="0" step="0.1">
+                    </div>
+                    <button class="" id="">Restablecer</button>
+                </div>
+            </section>
+
+        
+            <!-- ♦ TEXT EDITOR ♦ -->
+
+            <section class="" id="">
+                <h2 class="">TEXTO</h2>
+
+                <!-- ♣ Text ♣ -->
+
+                <div class="">
+                    <h3>TEXTO SUPERIOR</h3>
+                    <textarea class="" id="">Top Text</textarea>
+                    <div class="">
+                        <input type="checkbox" id="">
+                        <label for="">Sin texto superior</label>
+                        
+                    </div>
+                    
+                </div>
+                <div class="">
+                    <h3>TEXTO INFERIOR</h3>
+                    <textarea class="" id="">Bottom Text</textarea>
+                    <div class="">
+                        <input type="checkbox" id="">
+                        <label for="">Sin texto inferior</label>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- ♣ Font ♣ -->
+
+                <div class="">
+                    <h3>Fuente</h3>
+
+                    <select name="" id="" class="">
+                        <option value="Arial">Arial</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="American Typewriter">American Typewriter</option>
+                        <option value="Andale Mono">Andale Mono</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+
+                    <div class="">
+                    
+                    <input type="number" name="" class="" id="" min="12" value="40">
+
+                    <div class="">
+                        <button class="" id="" aria-label="Alinear texto o la Izquierda"><i class=""></i></button>
+                        <button class="" id="" aria-label="Alinear texto al Centro"><i class=""></i></button>
+                        <button class="" id="" aria-label="Alinear texto a la Derecha"><i class=""></i></button>
+                    </div>
+                </div>
+                </div>
+            
+                <!-- ♣ Color ♣ -->
+
+                <div class="">
+                    <div class="">
+
+                        <!-- ♦ Text color ♦ -->
+
+                        <div class="">
+                            <h3>Color</h3>
+                            <div class="">
+                                <input name="Text color"  type="color" id="" value="">
+                                <span id=""></span>
+                            </div>
+                            
+                        </div>
+
+                        <!-- ♦ Background color ♦ -->
+                        <div class="">
+                            <h3>Fondo</h3>
+                            <div class="">
+                                <input name="Background color" type="color" id="" value="">
+                                <span id=""></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="">
+                        <input type="checkbox" id="">
+                        <label for="">Fondo trasparente</label>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- ♣ Contour ♣ -->
+
+                <div class="">
+                    <h3>CONTORNO</h3>
+                    <div class="">
+                        <button class="" id="">Ninguno</button>
+                        <button class="" id="">Claro</button>
+                        <button class="" id="">Oscuro</button>
+                    </div>
+                    
+                </div>
+
+                <!-- ♣ Padding ♣ -->
+
+                <div class="">
+                   <h3>ESPACIADO</h3>
+                   <input type="number" id="" class="" min="10" max="50" value="35">
+                    
+                </div>
+
+                <!-- ♣ Line Height ♣ -->
+
+                <div class="">
+                    <h3>INTERLINEADO</h3>
+                    <select class="" id="">
+                        <option value="0.8">0.8</option>
+                        <option value="1">1</option>
+                        <option value="1.2">1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                    </select>
+                </div>
+            </section>
+        </aside>
+
+
+    </section>
+    </body>
+</html>
