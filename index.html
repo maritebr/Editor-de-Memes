@@ -7,14 +7,14 @@
         <link href="style.css" rel="stylesheet">
         <script src="script.js"></script>
     </head>
-    <body class="">
+    <body>
 
                           <!-- ♣ HEADER ♣ -->
 
         <header>
             <h1>Editor de Memes</h1>
-            <div class="">
-                <button class="" id=""><i class=""></i>Imagen</button>
+            <div class="top-bar">
+                <button class="top-button" id="img-button"><!--<i class=""></i> o <img>-->Imagen</button>
                 <button class="" id=""><i class=""></i>Texto</button>
                 <button class="" id=""><i class=""></i>Modo Oscuro</button>
                 <button class="" id=""><i class=""></i>Modo Claro</button>
@@ -22,51 +22,51 @@
         </header>
 
 
-        <section class="">
+        <section class="general">
 
             <main>
-                <div class="" id="">
-                    <p id="top-text" class="">Top Text</p>
+                <div class="meme-generator" id="">
+                    <p id="top-text" class="meme-text">Top Text</p>
                     <div src alt id="meme"></div>
-                    <p id="bottom-text" class="">Bottom Text</p>
+                    <p id="bottom-text" class="meme-text">Bottom Text</p>
                     
                 </div>
 
-                <button type="" class="" id=""><i class=""></i>Descargar Meme</button>
+                <button type="" class="download" id="download"><!--<i class=""></i> o img-->Descargar Meme</button>
 
             </main>
 
 
 
 
-        <aside class="" id="">
-           <button type="" class="" id=""><i class=""></i></button>
+        <aside id="aside">
+           <button type="" class="hidden-ocult" id="hidden-ocult"><!--<i class=""></i>--></button>
 
             <!-- ♦ IMG EDITOR ♦ -->
 
-            <section class="editor-img" id="">
+            <section class="img-editor" id="img-editor">
 
-                <h2 class="title">IMAGEN</h2>
+                <h2>IMAGEN</h2>
 
-                <div class="">
+                <div class="url">
                     <h3>URL</h3>
-                    <input type="text" class="" id=""> 
+                    <input type="text" class="input-url" id="input-url"> 
                     
                 </div>
 
 
                 <!-- ♠ Background ♠ -->
 
-                <div class="">
+                <div class="background">
                     <h3>FONDO</h3>
-                    <div class="">
-                        <div class="">
-                            <input type="color" id="" value="">
+                    <div class="button-bg">
+                        <div class="color-bg">
+                            <input type="color" id="input-color" value="">
                             <span id="">#FFFFF</span>
                         </div>
 
-                        <div class="">
-                            <select id="" class="">
+                        <div class="edit-bg">
+                            <select id="select-bg" class="select-bg">
                             <option value="unset">Ninguno</option>
                             <option value="lighten">Aclarar</option>
                             <option value="darken">Oscurecer</option>
@@ -83,9 +83,9 @@
 
                 <!-- ♠ Filters ♠ -->
 
-                <div class="1">
+                <div class="filters">
                     <h3>FILTROS</h3>
-                    <div class="">
+                    <div class="filter-bar">
                         <label for="brightness">BRILLO</label>
                         <input type="range" id="brightness" min="0" max="1" value="1" step="0.1"> 
                     </div>
@@ -121,34 +121,34 @@
                         <label for="invert">NEGATIVO</label>
                         <input type="range" id="invert" min="0" max="1" value="0" step="0.1">
                     </div>
-                    <button class="" id="">Restablecer</button>
+                    <button class="button-reset" id="button-reset">Restablecer</button>
                 </div>
             </section>
 
         
             <!-- ♦ TEXT EDITOR ♦ -->
 
-            <section class="" id="">
-                <h2 class="">TEXTO</h2>
+            <section class="text-editor" id="text-editor">
+                <h2>TEXTO</h2>
 
                 <!-- ♣ Text ♣ -->
 
-                <div class="">
+                <div class="div-text">
                     <h3>TEXTO SUPERIOR</h3>
-                    <textarea class="" id="">Top Text</textarea>
-                    <div class="">
-                        <input type="checkbox" id="">
-                        <label for="">Sin texto superior</label>
+                    <textarea class="top-text" id="top-text">Top Text</textarea>
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="checkbox-top">
+                        <label for="checkbox-top">Sin texto superior</label>
                         
                     </div>
                     
                 </div>
-                <div class="">
+                <div class="div-text">
                     <h3>TEXTO INFERIOR</h3>
-                    <textarea class="" id="">Bottom Text</textarea>
-                    <div class="">
-                        <input type="checkbox" id="">
-                        <label for="">Sin texto inferior</label>
+                    <textarea class="bottom-text" id="bottom-text">Bottom Text</textarea>
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="checkbox-bottom">
+                        <label for="checkbox-bottom">Sin texto inferior</label>
                         
                     </div>
                     
@@ -156,10 +156,10 @@
 
                 <!-- ♣ Font ♣ -->
 
-                <div class="">
+                <div class="div-fonts">
                     <h3>Fuente</h3>
 
-                    <select name="" id="" class="">
+                    <select name="" id="select-fonts" class="select-fonts">
                         <option value="Arial">Arial</option>
                         <option value="Arial Black">Arial Black</option>
                         <option value="American Typewriter">American Typewriter</option>
@@ -171,47 +171,47 @@
                         <option value="Times New Roman">Times New Roman</option>
                     </select>
 
-                    <div class="">
+                    <div class="div-fontsize">
                     
-                    <input type="number" name="" class="" id="" min="12" value="40">
+                    <input type="number" name="" class="fontsize" id="fontsize" min="12" value="40">
 
-                    <div class="">
-                        <button class="" id="" aria-label="Alinear texto o la Izquierda"><i class=""></i></button>
-                        <button class="" id="" aria-label="Alinear texto al Centro"><i class=""></i></button>
-                        <button class="" id="" aria-label="Alinear texto a la Derecha"><i class=""></i></button>
+                    <div class="div-aling">
+                        <button class="aling" id="aling-left" aria-label="Alinear texto o la Izquierda"><!--<i class=""></i>--></button>
+                        <button class="aling" id="aling-center" aria-label="Alinear texto al Centro"><i class=""></i></button>
+                        <button class="aling" id="aling-write" aria-label="Alinear texto a la Derecha"><i class=""></i></button>
                     </div>
                 </div>
                 </div>
             
                 <!-- ♣ Color ♣ -->
 
-                <div class="">
-                    <div class="">
+                <div class="div-color-general">
+                    <div class="div-color">
 
                         <!-- ♦ Text color ♦ -->
 
-                        <div class="">
+                        <div class="text-color">
                             <h3>Color</h3>
-                            <div class="">
-                                <input name="Text color"  type="color" id="" value="">
-                                <span id=""></span>
+                            <div class="text-color-input">
+                                <input name="Text color"  type="color" id="input-color" value="">
+                                <span id="span-color"></span>
                             </div>
                             
                         </div>
 
                         <!-- ♦ Background color ♦ -->
-                        <div class="">
+                        <div class="background-color">
                             <h3>Fondo</h3>
-                            <div class="">
-                                <input name="Background color" type="color" id="" value="">
-                                <span id=""></span>
+                            <div class="background-color-input">
+                                <input name="Background color" type="color" id="input-background" value="">
+                                <span id="span-background"></span>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="">
-                        <input type="checkbox" id="">
-                        <label for="">Fondo trasparente</label>
+                    <div class="checkbox-transparent">
+                        <input type="checkbox" id="checkbox-background">
+                        <label for="checkbox-background">Fondo trasparente</label>
                         
                     </div>
                     
@@ -219,29 +219,29 @@
 
                 <!-- ♣ Contour ♣ -->
 
-                <div class="">
+                <div class="div-contour">
                     <h3>CONTORNO</h3>
-                    <div class="">
-                        <button class="" id="">Ninguno</button>
-                        <button class="" id="">Claro</button>
-                        <button class="" id="">Oscuro</button>
+                    <div class="contour-bottom">
+                        <button class="none" id="none">Ninguno</button>
+                        <button class="light" id="light">Claro</button>
+                        <button class="dark" id="dark">Oscuro</button>
                     </div>
                     
                 </div>
 
                 <!-- ♣ Padding ♣ -->
 
-                <div class="">
+                <div class="div-padding">
                    <h3>ESPACIADO</h3>
-                   <input type="number" id="" class="" min="10" max="50" value="35">
+                   <input type="number" id="input-padding" class="input-padding" min="10" max="50" value="35">
                     
                 </div>
 
                 <!-- ♣ Line Height ♣ -->
 
-                <div class="">
+                <div class="div-line-height">
                     <h3>INTERLINEADO</h3>
-                    <select class="" id="">
+                    <select class="select-line-height" id="select-line-height">
                         <option value="0.8">0.8</option>
                         <option value="1">1</option>
                         <option value="1.2">1.2</option>
