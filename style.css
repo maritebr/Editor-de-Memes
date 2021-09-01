@@ -1,12 +1,14 @@
 *{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 80%;/*barra scroll*/
     /*font-family: ;
     color: ;
     background-color: ;
@@ -49,10 +51,16 @@ main{
 }
 
 .meme-generator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border: 1px black solid;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: black; /*provisorio*/
+    background-color: rgb(7, 7, 7); /*provisorio*/
+    width: 610px;
+    height: 610px;
 }
 
 .meme-text{
@@ -62,10 +70,13 @@ main{
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
-    /*font-family: ;
-    font-size: ;*/
-    background-color: pink; /*provisorio*/
+    /*font-family: ;*/
+    /*font-size: ;*/
+    background-color:pink;
 }
+
+
+
 
 .download{
     background-color:#94ecc8;/*provisorio*/
@@ -75,4 +86,56 @@ main{
     border-radius: 3px;
 }
 
-
+#aside {
+    display: flex;
+    /*flex-direction: column;*/
+   /* justify-content: center;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    border: solid black 1px;
+    background-color: pink;
+}
+.title-aside{
+    text-align: center;
+    padding: 20px ;
+}
+.url{
+    padding: 10px ;
+}
+.input-url{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+.background{
+    padding: 10px ;
+}
+.filters{
+    padding: 10px ;
+}
+.button-bg{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 5px;
+}
+.color-bg{
+    margin-right: 5px;
+}
+   
+.filters-bar{
+    display:flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+}
+.button-reset{
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+}
