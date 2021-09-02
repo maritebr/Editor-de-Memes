@@ -76,8 +76,6 @@ main{
 }
 
 
-
-
 .download{
     background-color:#94ecc8;/*provisorio*/
     border: 0px;
@@ -138,4 +136,38 @@ main{
     padding: 7px;
     border-radius: 20px;
     border: none;
+}
+
+
+/*SEGUNDO ASIDE
+/*
+
+
+.div-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1px solid orangered;
+  
+}
+
+.div-checkbox{
+    width: 100%;
+    border: 1px solid blue;
+}
+
+textarea{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 0;
+    border: 1px solid black;
+
+}
+*/
+
+.bottom-text, .top-text{
+    width: 100%;
+    padding-right: 180px;
 }
