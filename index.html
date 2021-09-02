@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cdd1a44c10.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </head>
     <body>
@@ -46,16 +47,23 @@
 
 
         <aside id="aside">
-         <!-- <button type="" class="hidden-ocult" id="hidden-ocult"><i class=""></i></button>
-            ♦ IMG EDITOR ♦ 
+           <!--<button type="" class="hidden-ocult" id="hidden-ocult"><i class=""></i></button>-->
+
+            <!-- ♦ IMG EDITOR ♦
+
             <section class="img-editor" id="img-editor">
+
                 <h2 class="title-aside">IMAGEN</h2>
+
                 <div class="url">
                     <h3>URL</h3>
                     <input type="text" class="input-url" id="input-url"> 
                     
                 </div>
-                 ♠ Background ♠ 
+
+
+                ♠ Background ♠
+
                 <div class="background">
                      <h3>FONDO</h3>
                         <div class="button-bg">
@@ -74,9 +82,14 @@
                             <option value="multiply">Multiplicar</option>
                             </select>
                         </div>
+
                     </div>
+
                 </div>
-               ♠ Filters ♠ 
+
+
+                ♠ Filters ♠
+
                 <div class="filters">
                         <h3>FILTROS</h3>
                         <div class="filters-bar">
@@ -118,30 +131,27 @@
                         <button class="button-reset" id="button-reset">Restablecer Filtros</button>
                 </div>
             </section>
-        -->
 
         
-          <!-- ♦ TEXT EDITOR ♦--> 
+            ♦ TEXT EDITOR ♦-->
 
             <section class="text-editor" id="text-editor">
                 <h2 class="title-aside">TEXTO</h2>
 
-             <!-- ♣ Text ♣ -->
+                 <!--♣ Text ♣ -->
 
                 <div class="div-text">
                     <h3>SUPERIOR</h3>
-                    <textarea class="top-text" id="top-text">Top Text</textarea>
+                    <textarea class="top-text" id="top-text">TOP TEXT</textarea>
                     <div class="div-checkbox">
-                        <input type="checkbox" id="checkbox-top" class="checkbox-top">
+                        <input type="checkbox" id="checkbox-top">
                         <label for="checkbox-top">Sin texto superior</label>
-                        
                     </div>
                     
                 </div>
-
                 <div class="div-text">
                     <h3>INFERIOR</h3>
-                    <textarea class="bottom-text" id="bottom-text">Bottom Text</textarea>
+                    <textarea class="bottom-text" id="bottom-text">BOTTOM TEXT</textarea>
                     <div class="div-checkbox">
                         <input type="checkbox" id="checkbox-bottom">
                         <label for="checkbox-bottom">Sin texto inferior</label>
@@ -150,10 +160,10 @@
                     
                 </div>
 
-              <!--  ♣ Font ♣ -->
+               <!-- ♣ Font ♣ -->
 
                 <div class="div-fonts">
-                    <h3>Fuente</h3>
+                    <h3>FUENTE</h3>
 
                     <select name="" id="select-fonts" class="select-fonts">
                         <option value="Arial">Arial</option>
@@ -172,35 +182,35 @@
                     <input type="number" name="" class="fontsize" id="fontsize" min="12" value="40">
 
                     <div class="div-aling">
-                        <button class="aling" id="aling-left" aria-label="Alinear texto o la Izquierda"><i class=""></i></button>
-                        <button class="aling" id="aling-center" aria-label="Alinear texto al Centro"><i class=""></i></button>
-                        <button class="aling" id="aling-write" aria-label="Alinear texto a la Derecha"><i class=""></i></button>
+                        <button class="aling" id="aling-left" aria-label="Alinear texto o la Izquierda"><i class="fas fa-align-left"></i></button>
+                        <button class="aling" id="aling-center" aria-label="Alinear texto al Centro"><i class="fas fa-align-center"></i></button>
+                        <button class="aling" id="aling-write" aria-label="Alinear texto a la Derecha"><i class="fas fa-align-right"></i></button>
                     </div>
                 </div>
                 </div>
             
-               <!-- ♣ Color ♣--> 
+                <!--♣ Color ♣ -->
 
                 <div class="div-color-general">
                     <div class="div-color">
 
-                       <!--  ♦ Text color ♦ -->
+                         <!--♦ Text color ♦ -->
 
                         <div class="text-color">
-                            <h3>Color</h3>
+                            <h3>COLOR</h3>
                             <div class="text-color-input">
                                 <input name="Text color"  type="color" id="input-color" value="">
-                                <span id="span-color"></span>
+                                <span id="span-color">#000000</span>
                             </div>
                             
                         </div>
 
-                        <!-- ♦ Background color ♦ -->
+                         <!--♦ Background color ♦ -->
                         <div class="background-color">
-                            <h3>Fondo</h3>
+                            <h3>FONDO</h3>
                             <div class="background-color-input">
                                 <input name="Background color" type="color" id="input-background" value="">
-                                <span id="span-background"></span>
+                                <span id="span-background">#ffffff</span>
                             </div>
                         </div>
                         
@@ -213,7 +223,7 @@
                     
                 </div>
 
-             <!-- ♣ Contour ♣ -->
+                 <!--♣ Contour ♣ -->
 
                 <div class="div-contour">
                     <h3>CONTORNO</h3>
@@ -225,7 +235,7 @@
                     
                 </div>
 
-               <!--  ♣ Padding ♣ -->
+                 <!--♣ Padding ♣--> 
 
                 <div class="div-padding">
                    <h3>ESPACIADO</h3>
@@ -233,7 +243,7 @@
                     
                 </div>
 
-              <!--   ♣ Line Height ♣ -->
+                 <!--♣ Line Height ♣ -->
 
                 <div class="div-line-height">
                     <h3>INTERLINEADO</h3>
@@ -246,7 +256,7 @@
                         <option value="2.5">2.5</option>
                     </select>
                 </div>
-            </section> 
+            </section>
         </aside>
 
 
