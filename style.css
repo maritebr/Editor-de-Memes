@@ -76,6 +76,8 @@ main{
 }
 
 
+
+
 .download{
     background-color:#94ecc8;/*provisorio*/
     border: 0px;
@@ -86,13 +88,14 @@ main{
 
 #aside {
     display: flex;
-    /*flex-direction: column;*/
-   /* justify-content: center;*/
+    flex-direction: column;
+    justify-content: flex-start;
     position: fixed;
     top: 0;
     right: 0;
-    width: 260px;
     height: 100%;
+    width: 260px;
+    padding: 20px;
     border: solid black 1px;
     background-color: pink;
 }
@@ -137,32 +140,66 @@ main{
     border-radius: 20px;
     border: none;
 }
+/*----Aside text*/
 
-
-/*SEGUNDO ASIDE
-/*
-.div-text{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5px;
-    border: 1px solid orangered;
-  
-}
-.div-checkbox{
-    width: 100%;
-    border: 1px solid blue;
-}
-textarea{
-    width: 100%;
+.div-text,.div-fonts{
     margin-top: 5px;
     padding: 5px 0;
-    border: 1px solid black;
 }
-*/
-
-.bottom-text, .top-text{
+.top-text,.bottom-text,.select-fonts{
     width: 100%;
-    padding-right: 180px;
+    padding: 5px;
+}
+.div-fontsize{
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+.fontsize{
+    width: 50%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.div-align{
+    width: 50%;
+}
+.aling{
+    padding: 6px;
+    margin: 5px 0 0 5px ;
+}
+.div-color{
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+.text-color,.background-color{
+    width: 50%;
+    margin: 8px 0;
+    /*border: solid 1px;*/
+}
+.text-color-input, .background-color-input{
+   background-color: white;
+}
+.text-color-input .input-color{
+    border:none;
+}
+.div-contour{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 10px;  
+}
+.none , .light, .dark{
+    padding: 5px 12px;
+    margin-top: 5px;
+}
+.div-padding, .div-line-height{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 8px;
+    padding: 5px 0;
+}
+.input-padding, .select-line-height{
+    padding: 5px;
 }
