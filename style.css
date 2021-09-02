@@ -141,8 +141,6 @@ main{
 
 /*SEGUNDO ASIDE
 /*
-
-
 .div-text{
     display: flex;
     width: 100%;
@@ -152,18 +150,15 @@ main{
     border: 1px solid orangered;
   
 }
-
 .div-checkbox{
     width: 100%;
     border: 1px solid blue;
 }
-
 textarea{
     width: 100%;
     margin-top: 5px;
     padding: 5px 0;
     border: 1px solid black;
-
 }
 */
 
