@@ -18,16 +18,16 @@ body{
 /*-- ♣ HEADER ♣ --*/
 
 header{
-    border: 1px black solid;
-    background-color: pink; /*provisorio*/
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
     width: 100%;
     padding: 10px;
     text-align: center;
 }
 
-h1{
-    color: white; /*provisorio*/
+h1, h2, h3, h4{
+    color: #41444B;
 }
+
 
 .top-bar{
     justify-content: center;
@@ -96,8 +96,9 @@ main{
     height: 100%;
     width: 260px;
     padding: 20px;
-    border: solid black 1px;
-    background-color: pink;
+    background-color: #eaffad;
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
+
 }
 .title-aside{
     text-align: center;
@@ -202,4 +203,72 @@ main{
 }
 .input-padding, .select-line-height{
     padding: 5px;
+}
+.top-button {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.top-button {
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            border:white;
+            font-weight: 650;
+}
+
+.top-button:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+.button-reset {
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            border:white;
+}
+
+.button-reset{background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.button-reset:hover{
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+.download{
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            border:white;
+            font-weight:650;
+            
+
+}
+.download{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+.download:hover{
+    background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
 }
