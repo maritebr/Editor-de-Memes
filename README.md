@@ -5,6 +5,6 @@ STATUS DEL PROYECTO:
 
 HTML: %100
 
-CSS: %30
+CSS: %80
 
-JS: %0
+JS: %10
