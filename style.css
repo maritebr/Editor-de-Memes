@@ -29,11 +29,35 @@ header{
 
 }
 
-.dark-mode{
+.dark-mode{ 
     color: white;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(53,132,202,1) 31%, rgba(3,13,15,1) 90%);
+ }
+/* BOTONES EN MODO OSCURO
+.dark-mode > .top-button {
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)
 }
 
+.dark-mode > .top-button{
+       margin: 10px;
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+     }
+
+.dark-mode > .top-button:hover {
+        background-position: right center;  change the direction of the change here 
+        color: #fff;
+        text-decoration: none;
+      }
+*/
 
 .top-bar{
     justify-content: center;
