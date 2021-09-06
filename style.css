@@ -18,14 +18,20 @@ body{
 /*-- ♣ HEADER ♣ --*/
 
 header{
-    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
     width: 100%;
     padding: 10px;
     text-align: center;
 }
 
-h1, h2, h3, h4{
+.light-mode{
     color: #41444B;
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
+
+}
+
+.dark-mode{
+    color: white;
+    background-color: black;
 }
 
 
@@ -96,8 +102,8 @@ main{
     height: 100%;
     width: 260px;
     padding: 20px;
-    background-color: #eaffad;
-    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
+    /*background-color: #eaffad;
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);*/
 
 }
 .title-aside{
