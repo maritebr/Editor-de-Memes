@@ -6,19 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/cdd1a44c10.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        
     </head>
     <body>
 
                           <!-- ♣ HEADER ♣ -->
 
-        <header>
+        <header id="header" class="light-mode">
             <h1>Editor de Memes</h1>
             <div class="top-bar">
                 <button class="top-button" id="img-button"><!--<i class=""></i> o <img>-->Imagen</button>
                 <button class="top-button" id=""><i class=""></i>Texto</button>
-                <button class="top-button" id=""><i class=""></i>Modo Oscuro</button>
-                <button class="top-button" id=""><i class=""></i>Modo Claro</button>
+                <button class="top-button" id="background-mode" onclick="cambiaColor()" ><i class=""></i>Modo Oscuro</button>
             </div>
         </header>
 
@@ -46,24 +45,18 @@
 
 
 
-        <aside id="aside">
+        <aside id="aside" class="light-mode">
            <!--<button type="" class="hidden-ocult" id="hidden-ocult"><i class=""></i></button>-->
 
             <!-- ♦ IMG EDITOR ♦
-
             <section class="img-editor" id="img-editor">
-
                 <h2 class="title-aside">IMAGEN</h2>
-
                 <div class="url">
                     <h3>URL</h3>
                     <input type="text" class="input-url" id="input-url"> 
                     
                 </div>
-
-
                 ♠ Background ♠
-
                 <div class="background">
                      <h3>FONDO</h3>
                         <div class="button-bg">
@@ -82,14 +75,9 @@
                             <option value="multiply">Multiplicar</option>
                             </select>
                         </div>
-
                     </div>
-
                 </div>
-
-
                 ♠ Filters ♠
-
                 <div class="filters">
                         <h3>FILTROS</h3>
                         <div class="filters-bar">
@@ -131,7 +119,6 @@
                         <button class="button-reset" id="button-reset">Restablecer Filtros</button>
                 </div>
             </section>
-
         
             ♦ TEXT EDITOR ♦-->
 
@@ -261,5 +248,6 @@
 
 
     </section>
+    <script src="script.js"></script>
     </body>
 </html>
