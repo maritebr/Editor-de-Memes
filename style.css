@@ -9,8 +9,8 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 80%;/*barra scroll*/
-    /*font-family: ;
-    color: ;*/
+    font-family:'Cute Font' ;
+    color:#41444B ;
     background: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
 }
 
@@ -21,59 +21,134 @@ header{
     padding: 10px;
     text-align: center;
 }
-h1{
-    font-family: fantasy; /*provisorio*/
-    
 
+h1{ 
+    font-size: 4.5em;
+    letter-spacing: 0.1em;
+    font-weight: 590;
+    text-shadow: 0.05em 0.05em #ff6e7f  
 }
-
-.light-mode{
-    color: #41444B;
-    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
-
-}
-
-.dark-mode{ 
-    color: white;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(53,132,202,1) 31%, rgba(3,13,15,1) 90%);
- }
-/* BOTONES EN MODO OSCURO
-.dark-mode > .top-button {
-    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)
-}
-
-.dark-mode > .top-button{
-       margin: 10px;
-       padding: 15px 45px;
-       text-align: center;
-       text-transform: uppercase;
-       transition: 0.5s;
-       background-size: 200% auto;
-       color: white;            
-       box-shadow: 0 0 20px #eee;
-       border-radius: 10px;
-       display: block;
-     }
-
-.dark-mode > .top-button:hover {
-        background-position: right center;  change the direction of the change here 
-        color: #fff;
-        text-decoration: none;
-      }
-*/
 
 .top-bar{
     justify-content: center;
     margin: 10px;
 }
 
-.top-button{
-    padding: 2px 8px;
-    margin: 5px;
-    /*color: ;
-    background-color: ;
-    */
+/*gradientes botones*/
+.top-button {
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.top-button {
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+}
+
+.top-button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-reset {
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+}
+
+.button-reset{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.button-reset:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.download{
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em; 
+    font-weight:650;
+    letter-spacing: 0.1em;        
+
+}
+
+.download{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.download:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/*-- ♣ MODO CLARO♣ --*/
+
+.light-mode{
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
+
+}
+
+/*-- ♣ MODO OSCURO♣ --*/
+
+.dark-mode{ 
+    color: white;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(53,132,202,1) 31%, rgba(3,13,15,1) 90%);
+ }
+
+.dark-mode h1{
+     color: #E5E5BE;
+     text-shadow: 0.05em 0.05em black;
+ }
+
+.dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset{
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+    color: white;
+}
+
+.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover{
+    background-position: right center;
+    color: #003973;
+    text-decoration: none;
+}
+.dark-mode .meme-text{
+    background-color:#04315d;
 }
 
 /*-- ♣ MAIN MEME-GENERATOR ♣ --*/
@@ -89,7 +164,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px black solid;
     margin-top: 10px;
     padding: 10px 20px;
     background-color: rgb(7, 7, 7); /*provisorio*/
@@ -104,21 +178,13 @@ main{
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
-    /*font-family: ;*/
-    /*font-size: ;*/
-    background-color:pink;
+    font-size: 1.8em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+    background-color:#ffc3e6;
 }
 
-
-
-
-.download{
-    background-color:#94ecc8;/*provisorio*/
-    border: 0px;
-    padding: 8px;
-    margin-top: 10px;
-    border-radius: 3px;
-}
+/*-- ♣ aside ♣ --*/
 
 #aside {
     display: flex;
@@ -134,24 +200,37 @@ main{
     background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);*/
 
 }
+
 .title-aside{
     text-align: center;
     padding: 20px ;
+    font-size: 2.2em;
 }
+
+h3{
+    font-size: 1.5em;
+}
+
+/*-- ♣ ASIDE IMG ♣ --*/
+
 .url{
     padding: 10px ;
 }
+
 .input-url{
     width: 100%;
     margin-top: 5px;
     padding: 5px 0;
 }
+
 .background{
     padding: 10px ;
 }
+
 .filters{
     padding: 10px ;
 }
+
 .button-bg{
     display: flex;
     flex-direction: row;
@@ -175,7 +254,8 @@ main{
     border-radius: 20px;
     border: none;
 }
-/*----Aside text*/
+
+/*-- ♣ ASIDE TEXT ♣ --*/
 
 .div-text,.div-fonts{
     margin-top: 5px;
@@ -224,10 +304,12 @@ main{
     width: 100%; 
     margin-top: 10px;  
 }
+
 .none , .light, .dark{
     padding: 5px 12px;
     margin-top: 5px;
 }
+
 .div-padding, .div-line-height{
     display: flex;
     flex-direction: column;
@@ -235,74 +317,15 @@ main{
     margin-top: 8px;
     padding: 5px 0;
 }
+
 .input-padding, .select-line-height{
     padding: 5px;
 }
-.top-button {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
 
+/*-- ♣ ASIDE TEXT ♣ --*/
+
+ .text-editor {
+    display: none;
 }
 
-.top-button {
-    border-radius: 10px;
-    color: #41444B;
-    margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            border:white;
-            font-weight: 650;
-}
-
-.top-button:hover{
-    background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-}
-
-.button-reset {
-    border-radius: 10px;
-    color: white;
-    margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            border:white;
-}
-
-.button-reset{background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-
-}
-
-.button-reset:hover{
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-}
-
-.download{
-    border-radius: 10px;
-    color: #41444B;
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            border:white;
-            font-weight:650;
-            
-
-}
-.download{
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-
-}
-.download:hover{
-    background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-}
+/*-- ♣ ♣ --*/
