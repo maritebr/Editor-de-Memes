@@ -1,3 +1,4 @@
+/*-- ♣ MODO CLARO OSCURO ♣ --*/
 
 let modo = 'claro'
 const cambiaColor = () => {
@@ -27,3 +28,17 @@ const cambiaColor = () => {
     }
     boton.textContent = 'Modo ' + modo
 }
+
+/*-- ♣ REEMPLAZO ASIDES ♣ --*/
+
+  let muestraAside1=()=>{
+  document.getElementById('text-editor').style.display="block";
+  document.getElementById('img-editor').style.display="none";
+};
+
+let muestraAside2=()=>{
+  document.getElementById('text-editor').style.display="none";
+  document.getElementById('img-editor').style.display="block";
+};
+
+/*-- ♣ ♣ --*/

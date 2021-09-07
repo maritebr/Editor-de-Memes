@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Editor de Memes</title>
+        <title>Generador de Memes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/cdd1a44c10.js" crossorigin="anonymous"></script>
+        <!-- ♣ FUENTE ♣ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
         
     </head>
     <body>
@@ -13,10 +17,10 @@
                           <!-- ♣ HEADER ♣ -->
 
         <header id="header" class="light-mode">
-            <h1>Editor de Memes</h1>
+            <h1>Generador de Memes</h1>
             <div class="top-bar">
-                <button class="top-button" id="img-button"><!--<i class=""></i> o <img>-->Imagen</button>
-                <button class="top-button" id=""><i class=""></i>Texto</button>
+                <button class="top-button" id="img-button" onclick="muestraAside2()"><!--<i class=""></i> o <img>-->Imagen</button>
+                <button class="top-button" id="text-button" onclick="muestraAside1()"><i class=""></i>Texto</button>
                 <button class="top-button" id="background-mode" onclick="cambiaColor()" ><i class=""></i>Modo Oscuro</button>
             </div>
         </header>
@@ -26,13 +30,14 @@
 
             <main>
                 <div class="meme-generator" id="">
+                    
                     <div id="top-text" class="meme-text">
                         <p>Top Text</p>
                     </div>
 
                     <div src alt id="meme"></div>
                     
-                    <div id="bottom-text"          class="meme-text">
+                    <div id="bottom-text" class="meme-text">
                     <p>Bottom Text</p>
                     </div>
                     
@@ -48,15 +53,17 @@
         <aside id="aside" class="light-mode">
            <!--<button type="" class="hidden-ocult" id="hidden-ocult"><i class=""></i></button>-->
 
-            <!-- ♦ IMG EDITOR ♦
+            <!-- ♦ IMG EDITOR ♦-->
             <section class="img-editor" id="img-editor">
+
                 <h2 class="title-aside">IMAGEN</h2>
+
                 <div class="url">
                     <h3>URL</h3>
-                    <input type="text" class="input-url" id="input-url"> 
-                    
+                    <input type="text" class="input-url" id="input-url">     
                 </div>
-                ♠ Background ♠
+
+               <!-- ♠ Background ♠ --> 
                 <div class="background">
                      <h3>FONDO</h3>
                         <div class="button-bg">
@@ -77,7 +84,8 @@
                         </div>
                     </div>
                 </div>
-                ♠ Filters ♠
+
+                <!-- ♠ Filters ♠-->
                 <div class="filters">
                         <h3>FILTROS</h3>
                         <div class="filters-bar">
@@ -120,34 +128,40 @@
                 </div>
             </section>
         
-            ♦ TEXT EDITOR ♦-->
+            <!--♦ TEXT EDITOR ♦-->
 
             <section class="text-editor" id="text-editor">
+
                 <h2 class="title-aside">TEXTO</h2>
 
-                 <!--♣ Text ♣ -->
+                <!--♣ Text ♣ -->
 
                 <div class="div-text">
+
                     <h3>SUPERIOR</h3>
+
                     <textarea class="top-text" id="top-text">TOP TEXT</textarea>
+
                     <div class="div-checkbox">
                         <input type="checkbox" id="checkbox-top">
                         <label for="checkbox-top">Sin texto superior</label>
-                    </div>
-                    
-                </div>
-                <div class="div-text">
-                    <h3>INFERIOR</h3>
-                    <textarea class="bottom-text" id="bottom-text">BOTTOM TEXT</textarea>
-                    <div class="div-checkbox">
-                        <input type="checkbox" id="checkbox-bottom">
-                        <label for="checkbox-bottom">Sin texto inferior</label>
-                        
-                    </div>
-                    
+                    </div>  
                 </div>
 
-               <!-- ♣ Font ♣ -->
+                <div class="div-text">
+
+                    <h3>INFERIOR</h3>
+
+                    <textarea class="bottom-text" id="bottom-text">BOTTOM TEXT</textarea>
+
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="checkbox-bottom">
+                        <label for="checkbox-bottom">Sin texto inferior</label>      
+                    </div>
+      
+                </div>
+
+                <!-- ♣ Font ♣ -->
 
                 <div class="div-fonts">
                     <h3>FUENTE</h3>
@@ -181,10 +195,12 @@
                 <div class="div-color-general">
                     <div class="div-color">
 
-                         <!--♦ Text color ♦ -->
+                        <!--♦ Text color ♦ -->
 
                         <div class="text-color">
+
                             <h3>COLOR</h3>
+
                             <div class="text-color-input">
                                 <input name="Text color"  type="color" id="input-color" value="">
                                 <span id="span-color">#000000</span>
@@ -194,15 +210,20 @@
 
                          <!--♦ Background color ♦ -->
                         <div class="background-color">
+
                             <h3>FONDO</h3>
+
                             <div class="background-color-input">
                                 <input name="Background color" type="color" id="input-background" value="">
                                 <span id="span-background">#ffffff</span>
                             </div>
+
                         </div>
                         
                     </div>
+
                     <div class="checkbox-transparent">
+
                         <input type="checkbox" id="checkbox-background">
                         <label for="checkbox-background">Fondo trasparente</label>
                         
@@ -211,9 +232,10 @@
                 </div>
 
                  <!--♣ Contour ♣ -->
-
                 <div class="div-contour">
+
                     <h3>CONTORNO</h3>
+
                     <div class="contour-bottom">
                         <button class="none" id="none">Ninguno</button>
                         <button class="light" id="light">Claro</button>
@@ -225,7 +247,9 @@
                  <!--♣ Padding ♣--> 
 
                 <div class="div-padding">
+
                    <h3>ESPACIADO</h3>
+
                    <input type="number" id="input-padding" class="input-padding" min="10" max="50" value="35">
                     
                 </div>
@@ -233,7 +257,9 @@
                  <!--♣ Line Height ♣ -->
 
                 <div class="div-line-height">
+
                     <h3>INTERLINEADO</h3>
+
                     <select class="select-line-height" id="select-line-height">
                         <option value="0.8">0.8</option>
                         <option value="1">1</option>
@@ -242,7 +268,9 @@
                         <option value="2">2</option>
                         <option value="2.5">2.5</option>
                     </select>
+
                 </div>
+                
             </section>
         </aside>
 
