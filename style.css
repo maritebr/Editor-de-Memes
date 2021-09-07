@@ -10,9 +10,8 @@ body{
     justify-content: center;
     height: 80%;/*barra scroll*/
     /*font-family: ;
-    color: ;
-    background-color: ;
-    */
+    color: ;*/
+    background: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
 }
 
 /*-- ♣ HEADER ♣ --*/
@@ -21,6 +20,11 @@ header{
     width: 100%;
     padding: 10px;
     text-align: center;
+}
+h1{
+    font-family: fantasy; /*provisorio*/
+    
+
 }
 
 .light-mode{
