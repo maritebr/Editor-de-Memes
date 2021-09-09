@@ -6,7 +6,7 @@ const cambiaColor = () => {
     const body = document.body
     const aside = document.getElementById('aside')
     const boton = document.getElementById('background-mode')
-    if (modo === 'claro'){
+    if (modo === 'oscuro'){
         header.classList.remove('light-mode')
         header.classList.add('dark-mode');
 
@@ -14,7 +14,7 @@ const cambiaColor = () => {
         aside.classList.add('dark-mode');
 
         body.classList.add('dark-mode');
-        modo = 'oscuro'
+        modo = 'claro'
     }else{
         header.classList.remove('dark-mode')
         header.classList.add('light-mode');
@@ -23,7 +23,7 @@ const cambiaColor = () => {
         aside.classList.add('light-mode');
 
         body.classList.remove('dark-mode');
-        modo = 'claro'
+        modo = 'oscuro'
 
     }
     boton.textContent = 'Modo ' + modo
