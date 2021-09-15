@@ -54,8 +54,15 @@ const actualizarTextos=()=>{
 const inicializarTexto=()=>{
   $('top-text-input').addEventListener('input', actualizarTextos)
   $('bottom-text-input').addEventListener('input', actualizarTextos)
+  $('select-fonts').addEventListener('change', actualizarFuente)
 }
+/*-- ♣ Selector de Fuentes ♣ --*/
+const actualizarFuente = () =>{
+  const fuentes = $('select-fonts').value 
 
+   $('top-text').style.fontFamily = fuentes
+   $('bottom-text').style.fontFamily = fuentes
+}
 const inicializar=()=>{
   inicializarTexto()
 }
