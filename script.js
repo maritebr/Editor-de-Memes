@@ -41,4 +41,23 @@ let muestraAside2=()=>{
   document.getElementById('img-editor').style.display="block";
 };
 
-/*-- ♣ ♣ --*/
+/*-- ♣ Top Text y Bottom Text ♣ --*/
+
+const $=(id)=> document.getElementById(id)
+
+
+const actualizarTextos=()=>{
+  $('top-text').textContent=$('top-text-input').value
+  $('bottom-text').textContent=$('bottom-text-input').value
+}
+
+const inicializarTexto=()=>{
+  $('top-text-input').addEventListener('input', actualizarTextos)
+  $('bottom-text-input').addEventListener('input', actualizarTextos)
+}
+
+const inicializar=()=>{
+  inicializarTexto()
+}
+
+window.onload=inicializar

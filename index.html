@@ -19,9 +19,9 @@
         <header id="header" class="light-mode">
             <h1>Generador de Memes</h1>
             <div class="top-bar">
-                <button class="top-button" id="img-button" onclick="muestraAside2()"><!--<i class=""></i> o <img>-->Imagen</button>
-                <button class="top-button" id="text-button" onclick="muestraAside1()"><i class=""></i>Texto</button>
-                <button class="top-button" id="background-mode" onclick="cambiaColor()" ><i class=""></i>Modo Oscuro</button>
+                <button class="top-button" id="img-button" onclick="muestraAside2()">Imagen</button>
+                <button class="top-button" id="text-button" onclick="muestraAside1()">Texto</button>
+                <button class="top-button" id="background-mode" onclick="cambiaColor()" >Modo Oscuro</button>
             </div>
         </header>
 
@@ -35,7 +35,7 @@
                         <p>Top Text</p>
                     </div>
 
-                    <div src="" alt id="meme"></div>
+                    <div src="" alt="mi-meme" id="meme"></div>
                     
                     <div id="bottom-text" class="meme-text">
                     <p>Bottom Text</p>
@@ -43,7 +43,7 @@
                     
                 </div>
 
-                <button type="" class="download" id="download"><!--<i class=""></i> o img-->Descargar Meme</button>
+                <button type="" class="download" id="download">Descargar Meme</button>
 
             </main>
 
@@ -140,7 +140,7 @@
 
                     <h3>SUPERIOR</h3>
 
-                    <textarea class="top-text" id="top-text">TOP TEXT</textarea>
+                    <textarea class="top-text" id="top-text-input">TOP TEXT</textarea>
 
                     <div class="div-checkbox">
                         <input type="checkbox" id="checkbox-top">
@@ -152,7 +152,7 @@
 
                     <h3>INFERIOR</h3>
 
-                    <textarea class="bottom-text" id="bottom-text">BOTTOM TEXT</textarea>
+                    <textarea class="bottom-text" id="bottom-text-input">BOTTOM TEXT</textarea>
 
                     <div class="div-checkbox">
                         <input type="checkbox" id="checkbox-bottom">
@@ -202,7 +202,7 @@
                             <h3>COLOR</h3>
 
                             <div class="text-color-input">
-                                <input name="Text color"  type="color" id="input-color" value="">
+                                <input name="Text color"  type="color" id="input-color-text" value="">
                                 <span id="span-color">#000000</span>
                             </div>
                             
