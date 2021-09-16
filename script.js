@@ -55,6 +55,9 @@ const inicializarTexto=()=>{
   $('top-text-input').addEventListener('input', actualizarTextos)
   $('bottom-text-input').addEventListener('input', actualizarTextos)
   $('select-fonts').addEventListener('change', actualizarFuente)
+  
+/* PRUEBA DE INPUT TAMAñO FUENTE
+  $('fontsize').addEventListener('change', tamañoFuente)*/
 }
 /*-- ♣ Selector de Fuentes ♣ --*/
 const actualizarFuente = () =>{
@@ -62,9 +65,62 @@ const actualizarFuente = () =>{
 
    $('top-text').style.fontFamily = fuentes
    $('bottom-text').style.fontFamily = fuentes
+   console.log("fuentes");
 }
+
+/* PRUEBA DE INPUT TAMAñO FUENTE
+const tamañoFuente = () =>{
+  const tamañoFuente = $('fontsize').value
+
+   $('top-text').style.fontSize = tamañoFuente
+   $('bottom-text').style.fontSize = tamañoFuente
+   console.log("tamaño de fuente");
+
+}*/
 const inicializar=()=>{
   inicializarTexto()
 }
 
 window.onload=inicializar
+
+
+/*-- ♣ Checkbox de texto superior e inferior ♣ --*/
+
+function on(){
+  document.getElementById('top-text').style.display="none";
+  console.log("Hemos pulsado en on");
+}
+function onI(){
+  document.getElementById('bottom-text').style.display="none";
+  console.log("Hemos pulsado en on");
+}
+
+function off(){
+  document.getElementById('top-text').style.display="initial";
+  console.log("Hemos pulsado en off");
+}
+function offI(){
+  document.getElementById('bottom-text').style.display="initial";
+  console.log("Hemos pulsado en off");
+}
+
+let checkboxSuperior = document.getElementById('checkbox-top');
+checkboxSuperior.addEventListener("change", comprueba, false);
+
+let checkboxInferior = document.getElementById('checkbox-bottom');
+checkboxInferior.addEventListener("change", compruebaI, false);
+
+function comprueba(){
+  if(checkboxSuperior.checked==true){
+      on();
+  }else{
+     off();
+  }
+}
+function compruebaI(){
+  if(checkboxInferior.checked==true){
+      onI();
+  }else{
+     offI();
+  }
+}
