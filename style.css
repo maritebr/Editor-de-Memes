@@ -18,7 +18,7 @@ body{
 /*-- ♣ HEADER ♣ --*/
 
 header{
-    width: 100%;
+    
     padding: 10px;
     text-align: center;
 }
@@ -321,4 +321,95 @@ h3{
     display: none;
 }
 
-/*-- ♣ ♣ --*/
+/*-- ♣ MediaQueries ♣ --*/
+
+@media(max-width: 1110px){
+    .general{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+    }
+    .meme-generator{
+        margin: 0 2em 0 4em;
+        height: 90%;
+    }
+    #aside{
+        position: relative;
+        margin: 0 auto;
+        padding: 0.5em;    
+    }
+}
+
+@media(max-width: 960px){
+    .general{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    .meme-generator{
+        margin: 0 auto;
+       
+    }
+    #meme{
+        width: 610px;
+        height: 610px;
+    }
+    #aside{
+        width: 610px;
+        align-content: center;
+        font-size: 16px;
+    }
+    .background{
+        display: flex;  
+        flex-direction: column;
+        
+    }
+    .button-bg{
+       
+        justify-content: left;
+
+    } 
+    
+}
+
+@media(max-width: 620px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        width: 620px
+        
+    }
+    .top-bar{
+        flex-direction: column;
+        margin: 10px;
+    }
+    #aside{
+        width: 620px;
+    }
+    .div-contour{
+        justify-content: center;
+        align-items: center
+    }
+    .div-line-height{
+        justify-content: center;
+        margin: 20px auto;
+        width: 120px;
+    }
+    #select-line-height{
+        
+        width: 150px;
+    }
+    
+    .div-padding{
+        justify-content: center;
+        margin:20px auto;
+        width: 120px;
+    }
+    #input-padding{
+        
+        width: 150px;
+    }
+
+}
