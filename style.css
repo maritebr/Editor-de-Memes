@@ -151,6 +151,10 @@ h1{
 .dark-mode .meme-text{
     background-color:#04315d;
 }
+.span-color-change{
+    color: black;
+}
+
 
 /*-- ♣ MAIN MEME-GENERATOR ♣ --*/
 
