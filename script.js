@@ -40,7 +40,20 @@ let muestraAside2=()=>{
   document.getElementById('text-editor').style.display="none";
   document.getElementById('img-editor').style.display="block";
 };
-
+/*-- ♣ Ingresar URL ♣ --*/
+document.getElementById("input-url").addEventListener("input",e =>{
+  let imageInput = document.getElementById("input-url");
+  let image = document.getElementById("img-meme");
+  image.src = imageInput.value;
+  console.log("estamos en url");
+  });
+  /*const imgMeme = document.getElementById("img-meme")
+  const ingresarUrl=document.getElementById("input-url");
+  ingresarUrl.oninput= ()=>{
+    imgMeme.src=ingresarUrl.value;
+    console.log("entro")
+  };*/
+  
 /*-- ♣ Top Text y Bottom Text ♣ --*/
 
 const $=(id)=> document.getElementById(id)
@@ -71,11 +84,9 @@ const actualizarFuente = () =>{
 /* PRUEBA DE INPUT TAMAñO FUENTE
 const tamañoFuente = () =>{
   const tamañoFuente = $('fontsize').value
-
    $('top-text').style.fontSize = tamañoFuente
    $('bottom-text').style.fontSize = tamañoFuente
    console.log("tamaño de fuente");
-
 }*/
 const inicializar=()=>{
   inicializarTexto()
