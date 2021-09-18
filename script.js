@@ -29,6 +29,8 @@ const cambiaColor = () => {
     boton.textContent = 'Modo ' + modo
 }
 
+
+
 /*-- ♣ REEMPLAZO ASIDES ♣ --*/
 
   let muestraAside1=()=>{
@@ -40,6 +42,9 @@ let muestraAside2=()=>{
   document.getElementById('text-editor').style.display="none";
   document.getElementById('img-editor').style.display="block";
 };
+
+
+
 /*-- ♣ Ingresar URL ♣ --*/
 document.getElementById("input-url").addEventListener("input",e =>{
   let imageInput = document.getElementById("input-url");
@@ -54,6 +59,8 @@ document.getElementById("input-url").addEventListener("input",e =>{
     console.log("entro")
   };*/
   
+
+
 /*-- ♣ Top Text y Bottom Text ♣ --*/
 
 const $=(id)=> document.getElementById(id)
@@ -69,6 +76,8 @@ const inicializarTexto=()=>{
   $('bottom-text-input').addEventListener('input', actualizarTextos)
   $('select-fonts').addEventListener('change', actualizarFuente)
   
+
+
 /* PRUEBA DE INPUT TAMAñO FUENTE
   $('fontsize').addEventListener('change', tamañoFuente)*/
 }
@@ -88,12 +97,37 @@ const tamañoFuente = () =>{
    $('bottom-text').style.fontSize = tamañoFuente
    console.log("tamaño de fuente");
 }*/
-const inicializar=()=>{
-  inicializarTexto()
-}
 
-window.onload=inicializar
 
+
+/* -- ♣ Botones Posicion Texto ♣ -- */
+
+const posicionTextoDerT = document.getElementById("top-text")
+const posicionTextoDerB = document.getElementById("bottom-text")
+const botonAlinearDerecha=document.getElementById("aling-right");
+botonAlinearDerecha.onclick= ()=>{
+  posicionTextoDerT.style.textAlign = "right";
+  posicionTextoDerB.style.textAlign = "right";
+ };
+
+const posicionTextoCenT= document.getElementById("top-text")
+const posicionTextoCenB= document.getElementById("bottom-text")
+const botonAlinearCentro=document.getElementById("aling-center");
+botonAlinearCentro.onclick= ()=>{
+  posicionTextoCenT.style.textAlign = "center";
+  posicionTextoCenB.style.textAlign = "center";
+ };
+
+const posicionTextoizT = document.getElementById("top-text")
+const posicionTextoizB = document.getElementById("bottom-text")
+const botonAlinearIzquierda=document.getElementById("aling-left");
+botonAlinearIzquierda.onclick= ()=>{
+  posicionTextoizT.style.textAlign = "left";
+  posicionTextoizB.style.textAlign = "left";
+ };
+
+
+ 
 
 /*-- ♣ Checkbox de texto superior e inferior ♣ --*/
 
@@ -135,3 +169,11 @@ function compruebaI(){
      offI();
   }
 }
+
+
+
+const inicializar=()=>{
+  inicializarTexto()
+}
+
+window.onload=inicializar
