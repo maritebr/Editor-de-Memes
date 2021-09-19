@@ -35,7 +35,7 @@
                         <p>Top Text</p>
                     </div>
 
-                    <div id="meme"><img src="" id="img-meme" class="img-meme"></div>
+                    <div id="meme" style="width: 100%;"><img src="" id="img-meme" class="img-meme"></div>
                     
                     <div id="bottom-text" class="meme-text">
                     <p>Bottom Text</p>
@@ -90,39 +90,39 @@
                         <h3>FILTROS</h3>
                         <div class="filters-bar">
                             <label for="brightness">BRILLO</label>
-                            <input type="range" id="brightness" min="0" max="1" value="1" step="0.1"> 
+                            <input type="range" id="brightness"  onchange="actualizarFiltros()" min="0" max="1" value="1" step="0.1"> 
                         </div>
                         <div class="filters-bar">
                             <label for="opacity">OPACIDAD</label>
-                            <input type="range" id="opacity" min="0" max="1" value="1" step="0.1">
+                            <input type="range" id="opacity"  onchange="actualizarFiltros()" min="0" max="1" value="1" step="0.1">
                         </div>
                         <div class="filters-bar">
                             <label for="contrast">CONTRASTE</label>
-                            <input type="range" id="contrast" min="100" max="1000" value="100">
+                            <input type="range" id="contrast" onchange="actualizarFiltros()" min="100" max="1000" value="100">
                         </div>
                         <div class="filters-bar">
                             <label for="blur">DESENFOQUE</label>
-                            <input type="range" id="blur" min="0" max="10" value="0" step="0.1">
+                            <input type="range" id="blur" onchange="actualizarFiltros()" min="0" max="10" value="0" step="0.1">
                         </div>
                         <div class="filters-bar">
                             <label for="grayscale">ESCALA DE GRISES</label>
-                            <input type="range" id="grayscale" min="0" max="100" value="0">
+                            <input type="range" id="grayscale" onchange="actualizarFiltros()" min="0" max="100" value="0">
                         </div>
                         <div class="filters-bar">
                             <label for="sepia">SEPIA</label>
-                            <input type="range" id="sepia" min="0" max="100" value="0">
+                            <input type="range" id="sepia" onchange="actualizarFiltros()" min="0" max="100" value="0">
                         </div>
                         <div class="filters-bar">
                             <label for="hue">HUE</label>
-                            <input type="range" id="hue" min="0" max="360" value="0">
+                            <input type="range" id="hue" onchange="actualizarFiltros()" min="0" max="360" value="0">
                         </div>
                         <div class="filters-bar">
                             <label for="saturate">SATURADO</label>
-                            <input type="range" id="saturate" min="100" max="1000" value="100" step="10">
+                            <input type="range" id="saturate" onchange="actualizarFiltros()" min="100" max="1000" value="100" step="10">
                         </div>
                         <div class="filters-bar">
                             <label for="invert">NEGATIVO</label>
-                            <input type="range" id="invert" min="0" max="1" value="0" step="0.1">
+                            <input type="range" id="invert" onchange="actualizarFiltros()" min="0" max="1" value="0" step="0.1">
                         </div>
                         <button class="button-reset" id="button-reset">Restablecer Filtros</button>
                 </div>

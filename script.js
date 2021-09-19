@@ -59,11 +59,28 @@ document.getElementById("input-url").addEventListener("input",e =>{
     console.log("entro")
   };*/
   
+/*-- ♣ FILTROS IMG ♣ --*/
+const actualizarFiltros = () =>{
+  const image = document.getElementById('img-meme');
+
+  const valorBrillo = document.getElementById('brightness').value;
+  const valorOpacidad = document.getElementById('opacity').value;
+  const valorContraste = document.getElementById('contrast').value;
+  const valorDesenfoque = document.getElementById('blur').value;
+  const valorGrayscale = document.getElementById('grayscale').value;
+  const valorSepia = document.getElementById('sepia').value;
+  const valorHue = document.getElementById('hue').value;
+  const valorSaturado = document.getElementById('saturate').value;
+  const valorNegativo = document.getElementById('invert').value;
+
+  image.style.filter = `brightness(${valorBrillo})`
+  // opacity(${valorOpacidad}) contrast(${valorContraste}) blur(${valorDesenfoque}px) grayscale(${valorGrayscale}%) sepia(${valorSepia}%) saturate(${valorSaturado}%) invert(${valorNegativo})
+}
 
 
 /*-- ♣ Top Text y Bottom Text ♣ --*/
 
-const $=(id)=> document.getElementById(id)
+const $ =(id)=> document.getElementById(id)
 
 
 const actualizarTextos=()=>{
