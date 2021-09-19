@@ -127,7 +127,53 @@ botonAlinearIzquierda.onclick= ()=>{
  };
 
 
- 
+
+/* -- ♣ Color Fondo de Texto ♣ --*/
+
+
+  document.getElementById("input-background-text").addEventListener("input",e =>{
+      let textBgInput = document.getElementById("input-background-text");
+      let textBgT = document.getElementById("top-text");
+      let textBgB = document.getElementById("bottom-text")
+      textBgB.style.backgroundColor= textBgInput.value;
+      textBgT.style.backgroundColor= textBgInput.value;
+      })
+
+
+      
+/* -- ♣ Color de Texto ♣ -- */
+
+document.getElementById("input-color-text").addEventListener("input",e =>{
+  let textColorInput = document.getElementById("input-color-text");
+  let textColorT = document.getElementById("top-text");
+  let textColorB = document.getElementById("bottom-text")
+  textColorT.style.color= textColorInput.value;
+  textColorB.style.color= textColorInput.value;
+  })
+
+
+/* -- ♣ Fondo Texto Transparente ♣ -- */
+
+function onText(){
+  document.getElementById('top-text').style.background="none";
+  document.getElementById('bottom-text').style.background="none";
+}
+function offText(){
+  document.getElementById('top-text').style.background="initial";
+  document.getElementById('bottom-text').style.background="initial";
+}
+
+let checkboxTextBg = document.getElementById('checkbox-background');
+checkboxTextBg.addEventListener("change", compruebaTextBg, false);
+
+function compruebaTextBg(){
+  if(checkboxTextBg.checked==true){
+      onText();
+  }else{
+     offText();
+  }
+} 
+
 
 /*-- ♣ Checkbox de texto superior e inferior ♣ --*/
 
