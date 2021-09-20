@@ -45,7 +45,7 @@ let muestraAside2=()=>{
 
 
 
-/*-- ♣ Ingresar URL ♣ --*/
+/*-- ♣ INGRESAR URL ♣ --*/
 document.getElementById("input-url").addEventListener("input",e =>{
   let imageInput = document.getElementById("input-url");
   let image = document.getElementById("img-meme");
@@ -58,8 +58,20 @@ document.getElementById("input-url").addEventListener("input",e =>{
     imgMeme.src=ingresarUrl.value;
     console.log("entro")
   };*/
+
+  
+
+/* -- ♣ COLOR FONDO DE IMAGEN ♣ --*/
+
+  document.getElementById("input-color").addEventListener("input",e =>{
+    let fondoImagen = document.getElementById("input-color");
+    let fondoMeme = document.getElementById("meme-generator");
+    fondoMeme.style.backgroundColor= fondoImagen.value;
+    
+    })
   
 /*-- ♣ FILTROS IMG ♣ --*/
+
 const actualizarFiltros = () =>{
   const image = document.getElementById('img-meme');
 
@@ -73,8 +85,24 @@ const actualizarFiltros = () =>{
   const valorSaturado = document.getElementById('saturate').value;
   const valorNegativo = document.getElementById('invert').value;
 
-  image.style.filter = `brightness(${valorBrillo})`
-  // opacity(${valorOpacidad}) contrast(${valorContraste}) blur(${valorDesenfoque}px) grayscale(${valorGrayscale}%) sepia(${valorSepia}%) saturate(${valorSaturado}%) invert(${valorNegativo})
+  image.style.filter = `brightness(${valorBrillo})`+`contrast(${valorContraste}%)`+`opacity(${valorOpacidad})`+`blur(${valorDesenfoque}px)`+`grayscale(${valorGrayscale}%)`+`sepia(${valorSepia}%)`+`hue-rotate(${valorHue}deg)`+`saturate(${valorSaturado}%)`+`invert(${valorNegativo})`
+  
+}
+
+const reestrablecerFiltros = () => {
+
+  document.getElementById('brightness').value=1
+  document.getElementById('opacity').value=1
+  document.getElementById('contrast').value=100
+  document.getElementById('blur').value=0
+  document.getElementById('grayscale').value=0
+  document.getElementById('sepia').value=0
+  document.getElementById('hue').value=0
+  document.getElementById('saturate').value=100
+  document.getElementById('invert').value=0
+
+  actualizarFiltros()
+
 }
 
 

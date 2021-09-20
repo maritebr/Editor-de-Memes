@@ -1,4 +1,4 @@
-  
+
 *{
     margin: 0 ;
     padding: 0;
@@ -171,17 +171,31 @@ main{
     align-items: center;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: rgb(7, 7, 7); /*provisorio*/
+    background-color: rgb(0, 0, 0); /*provisorio*/
     width: 610px;
     height: 610px;
 }
-.img-meme{
-    width: 100%;
+#meme{
+    display: flex;
+    justify-content: center;
+    width: 565px;
+    height: 500px;   
 }
+
+img {
+    text-indent: -10000px
+}
+  /*para eliminar icono de imagen rota*/
+
+#img-meme{
+    width: 36.9em;
+    height: 27.5em;  
+}
+
 .meme-text{
     padding:20px 40px;
-    position: static;
-    width: 100%;
+    position:static;
+    width: 20.5em;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
@@ -357,6 +371,11 @@ h3{
     #meme{
         width: 610px;
         height: 610px;
+    }
+    #img-meme{
+        width: 36.9em;
+        height: 38em;
+        
     }
     #aside{
         width: 610px;

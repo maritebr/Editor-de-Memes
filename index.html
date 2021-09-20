@@ -29,13 +29,13 @@
         <section class="general">
 
             <main>
-                <div class="meme-generator" id="">
+                <div class="meme-generator" id="meme-generator">
                     
                     <div id="top-text" class="meme-text">
                         <p>Top Text</p>
                     </div>
 
-                    <div id="meme" style="width: 100%;"><img src="" id="img-meme" class="img-meme"></div>
+                    <div id="meme"><img src="" id="img-meme" class="img-meme" alt="" ></div>
                     
                     <div id="bottom-text" class="meme-text">
                     <p>Bottom Text</p>
@@ -124,7 +124,7 @@
                             <label for="invert">NEGATIVO</label>
                             <input type="range" id="invert" onchange="actualizarFiltros()" min="0" max="1" value="0" step="0.1">
                         </div>
-                        <button class="button-reset" id="button-reset">Restablecer Filtros</button>
+                        <button class="button-reset" id="button-reset" onclick="reestrablecerFiltros() ">Restablecer Filtros</button>
                 </div>
             </section>
         
