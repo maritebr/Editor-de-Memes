@@ -123,8 +123,8 @@ const inicializarTexto=()=>{
   
 
 
-/* PRUEBA DE INPUT TAMAñO FUENTE
-  $('fontsize').addEventListener('change', tamañoFuente)*/
+/* PRUEBA DE INPUT TAMAñO FUENTE*/
+  $('fontsize').addEventListener('change', sizeFuente())
 }
 /*-- ♣ Selector de Fuentes ♣ --*/
 const actualizarFuente = () =>{
@@ -143,6 +143,15 @@ const tamañoFuente = () =>{
    console.log("tamaño de fuente");
 }*/
 
+//PRUEBA DE INPUT TAMAñO FUENTE
+const sizeFuente = () =>{
+  const size = $('fontsize').value
+   $('top-text').style.fontSize = `${size}px`
+   $('bottom-text').style.fontSize = `${size}px`
+   
+   
+   console.log(size);
+}
 
 
 /* -- ♣ Botones Posicion Texto ♣ -- */
@@ -267,4 +276,4 @@ const inicializar=()=>{
   inicializarTexto()
 }
 
-window.onload=inicializar
+window.onload = inicializar;

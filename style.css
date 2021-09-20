@@ -173,7 +173,7 @@ main{
     padding: 10px 20px;
     background-color: rgb(0, 0, 0); /*provisorio*/
     width: 610px;
-    height: 610px;
+   /* height: 610px; revisar*/
 }
 #meme{
     display: flex;
@@ -195,7 +195,7 @@ img {
 .meme-text{
     padding:20px 40px;
     position:static;
-    width: 20.5em;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
