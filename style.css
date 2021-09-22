@@ -331,6 +331,72 @@ h3{
     margin-top: 5px;
 }
 
+
+
+/* -- ♣ Botones de Contorno ♣ -- */
+
+.none{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.none{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.none:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.dark{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.dark{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.dark:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.light{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.light{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.light:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
 /*-- ♣ ASIDE TEXT ♣ --*/
 
  .text-editor {

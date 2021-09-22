@@ -229,6 +229,55 @@ function compruebaTextBg(){
 } 
 
 
+/* -- ♣ Texto de los inputs de color ♣ -- */
+
+
+
+document.getElementById("input-color-text").addEventListener("input",e => {
+  let inputColorText = document.getElementById("input-color-text");
+  let textColorText = document.getElementById("span-color");
+  textColorText.textContent= inputColorText.value; 
+})
+
+
+document.getElementById("input-background-text").addEventListener("input",e => {
+  let inputColorBackgroungT = document.getElementById("input-background-text");
+  let textColorBackgroundT = document.getElementById("span-background");
+  textColorBackgroundT.textContent= inputColorBackgroungT.value; 
+})
+
+document.getElementById("input-color").addEventListener("input",e => {
+  let inputColorBackgroung = document.getElementById("input-color");
+  let textColorBackground = document.getElementById("text-span-background");
+  textColorBackground.textContent= inputColorBackgroung.value; 
+})
+
+
+/* -- ♣ Contorno de Texto ♣ -- */
+
+document.getElementById("none").addEventListener("click",e =>{    
+  let bordeLetraT = document.getElementById("top-text")
+  let bordeLetraB = document.getElementById("bottom-text")
+  bordeLetraT.style.textShadow=("none")
+  bordeLetraB.style.textShadow=("none")
+  })
+
+  document.getElementById("light").addEventListener("click",e =>{
+    let bordeLetraT = document.getElementById("top-text");
+    let bordeLetraB = document.getElementById("bottom-text")
+    bordeLetraT.style.textShadow=("2px -2px 1px #fff")
+    bordeLetraB.style.textShadow=("2px -2px 1px #fff")
+    })
+
+    document.getElementById("dark").addEventListener("click",e =>{
+      let bordeLetraT = document.getElementById("top-text");
+      let bordeLetraB = document.getElementById("bottom-text")
+      bordeLetraT.style.textShadow=("2px -2px 1px #000")
+      bordeLetraB.style.textShadow=("2px -2px 1px #000")
+      })
+
+
+
 /*-- ♣ Checkbox de texto superior e inferior ♣ --*/
 
 function on(){
