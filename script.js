@@ -206,28 +206,6 @@ document.getElementById("input-color-text").addEventListener("input",e =>{
   })
 
 
-/* -- ♣ Fondo Texto Transparente ♣ -- */
-
-function onText(){
-  document.getElementById('top-text').style.background="none";
-  document.getElementById('bottom-text').style.background="none";
-}
-function offText(){
-  document.getElementById('top-text').style.background="initial";
-  document.getElementById('bottom-text').style.background="initial";
-}
-
-let checkboxTextBg = document.getElementById('checkbox-background');
-checkboxTextBg.addEventListener("change", compruebaTextBg, false);
-
-function compruebaTextBg(){
-  if(checkboxTextBg.checked==true){
-      onText();
-  }else{
-     offText();
-  }
-} 
-
 
 /* -- ♣ Texto de los inputs de color ♣ -- */
 
