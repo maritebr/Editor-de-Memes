@@ -124,7 +124,7 @@ const inicializarTexto=()=>{
 
 
 /* PRUEBA DE INPUT TAMAñO FUENTE*/
-  $('fontsize').addEventListener('change', sizeFuente)
+  $('fontsize').addEventListener('change', sizeFuente())
 }
 /*-- ♣ Selector de Fuentes ♣ --*/
 const actualizarFuente = () =>{
