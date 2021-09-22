@@ -1,4 +1,3 @@
-
 *{
     margin: 0 ;
     padding: 0;
@@ -138,12 +137,12 @@ h1{
      text-shadow: 0.05em 0.05em black;
  }
 
-.dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset{
+ .dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset, .dark-mode .none, .dark-mode .light, .dark-mode .dark{
     background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
     color: white;
 }
 
-.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover{
+.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover, .dark-mode .none:hover, .dark-mode .light:hover, .dark-mode .dark:hover{
     background-position: right center;
     color: #003973;
     text-decoration: none;
@@ -173,7 +172,7 @@ main{
     padding: 10px 20px;
     background-color: rgb(0, 0, 0); /*provisorio*/
     width: 610px;
-    height: 610px;
+   /* height: 610px; revisar*/
 }
 #meme{
     display: flex;
@@ -195,7 +194,7 @@ img {
 .meme-text{
     padding:20px 40px;
     position:static;
-    width: 20.5em;
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
@@ -330,6 +329,72 @@ h3{
     padding: 5px 12px;
     margin-top: 5px;
 }
+
+
+
+/* -- ♣ Botones de Contorno ♣ -- */
+
+.none{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.none{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.none:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.dark{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.dark{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.dark:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.light{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.light{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.light:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 /*-- ♣ ASIDE TEXT ♣ --*/
 
