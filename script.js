@@ -319,6 +319,20 @@ function compruebaI(){
   }
 }
 
+/* -- ♣ Boton Descarga ♣ -- */
+
+const imagen = document.getElementById("meme-generator")
+const boton = document.getElementById("download")
+
+boton.onclick = () => {
+    domtoimage.toBlob(imagen).then(function(blob) {
+        window.saveAs(blob, "imagen_descargada.jpg");
+    });
+};
+
+
+/* -- ♣ Inicializar ♣ --*/
+
 
 
 const inicializar=()=>{
