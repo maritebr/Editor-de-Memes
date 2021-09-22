@@ -192,6 +192,10 @@ img {
     text-indent: -10000px;
 }
 
+#img-meme{
+    background-blend-mode: normal;
+}
+
 
 .meme-text{
     padding:20px 40px;

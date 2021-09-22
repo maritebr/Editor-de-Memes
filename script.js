@@ -70,15 +70,14 @@ document.getElementById("input-url").addEventListener("input",e =>{
     
     })
   
+    const filtrosFondos = (evento) =>{
+      $('meme').style.backgroundBlendMode = evento.target.value;
 
-    /*
-/*---FILTROS FONDOS---
-const filtroFondo = () =>{
-  const image = document.getElementById('select-bg');
-
-  $('img-meme').style.backgraundBlendMode = evento.target.value;
-
-}*/
+     /* document.getElementById("select-bg").onchange = function(event) {
+        document.getElementById("meme").style.backgroundBlendMode = document.getElementById("select-bg").selectedOptions[0].innerHTML;
+    }*/
+  }
+    
 
 /*-- ♣ FILTROS IMG ♣ --*/
 
@@ -348,11 +347,13 @@ boton.onclick = () => {
 
 
 /* -- ♣ Inicializar ♣ --*/
-
-
+const inicializarImagen = () => {
+$('select-bg').addEventListener('change', filtrosFondos);
+}
 
 const inicializar=()=>{
   inicializarTexto()
+  inicializarImagen()
 }
 
 window.onload = inicializar;
