@@ -138,12 +138,12 @@ h1{
      text-shadow: 0.05em 0.05em black;
  }
 
-.dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset{
+ .dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset, .dark-mode .none, .dark-mode .light, .dark-mode .dark{
     background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
     color: white;
 }
 
-.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover{
+.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover, .dark-mode .none:hover, .dark-mode .light:hover, .dark-mode .dark:hover{
     background-position: right center;
     color: #003973;
     text-decoration: none;
