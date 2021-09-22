@@ -70,6 +70,16 @@ document.getElementById("input-url").addEventListener("input",e =>{
     
     })
   
+
+    /*
+/*---FILTROS FONDOS---
+const filtroFondo = () =>{
+  const image = document.getElementById('select-bg');
+
+  $('img-meme').style.backgraundBlendMode = evento.target.value;
+
+}*/
+
 /*-- ♣ FILTROS IMG ♣ --*/
 
 const actualizarFiltros = () =>{
@@ -88,6 +98,9 @@ const actualizarFiltros = () =>{
   image.style.filter = `brightness(${valorBrillo})`+`contrast(${valorContraste}%)`+`opacity(${valorOpacidad})`+`blur(${valorDesenfoque}px)`+`grayscale(${valorGrayscale}%)`+`sepia(${valorSepia}%)`+`hue-rotate(${valorHue}deg)`+`saturate(${valorSaturado}%)`+`invert(${valorNegativo})`
   
 }
+
+
+
 
 const reestrablecerFiltros = () => {
 
@@ -211,10 +224,12 @@ document.getElementById("input-color-text").addEventListener("input",e =>{
 function onText(){
   document.getElementById('top-text').style.background="none";
   document.getElementById('bottom-text').style.background="none";
+  console.log("entra")
 }
 function offText(){
   document.getElementById('top-text').style.background="initial";
   document.getElementById('bottom-text').style.background="initial";
+  console.log("sale")
 }
 
 let checkboxTextBg = document.getElementById('checkbox-background');
@@ -227,6 +242,7 @@ function compruebaTextBg(){
      offText();
   }
 } 
+
 
 
 /* -- ♣ Texto de los inputs de color ♣ -- */

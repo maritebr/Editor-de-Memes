@@ -108,7 +108,6 @@ h1{
 
 .download{
     background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-
 }
 
 .download:hover{
@@ -133,11 +132,11 @@ h1{
  }
 
 .dark-mode h1{
-     color: #E5E5BE;
-     text-shadow: 0.05em 0.05em black;
- }
+    color: #E5E5BE;
+    text-shadow: 0.05em 0.05em black;
+}
 
- .dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset, .dark-mode .none, .dark-mode .light, .dark-mode .dark{
+.dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset, .dark-mode .none, .dark-mode .light, .dark-mode .dark{
     background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
     color: white;
 }
@@ -147,9 +146,11 @@ h1{
     color: #003973;
     text-decoration: none;
 }
+
 .dark-mode .meme-text{
     background-color:#04315d;
 }
+
 .span-color-change{
     color: black;
 }
@@ -169,27 +170,28 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgb(0, 0, 0); /*provisorio*/
-    width: 610px;
-   /* height: 610px; revisar*/
+    width: 590px;
+    overflow: hidden;
+    height: 590px;
+
 }
+
 #meme{
     display: flex;
     justify-content: center;
     width: 565px;
-    height: 500px;   
+    margin: 0 auto;
+    height: 500px;  
+    overflow: hidden; 
 }
 
+ /*para eliminar icono de imagen rota*/
 img {
-    text-indent: -10000px
+    text-indent: -10000px;
 }
-  /*para eliminar icono de imagen rota*/
 
-#img-meme{
-    width: 36.9em;
-    height: 27.5em;  
-}
 
 .meme-text{
     padding:20px 40px;
@@ -218,7 +220,6 @@ img {
     padding: 20px;
     /*background-color: #eaffad;
     background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);*/
-
 }
 
 .title-aside{
@@ -257,6 +258,7 @@ h3{
     justify-content:space-between;
     margin-top: 5px;
 }
+
 .color-bg{
     margin-right: 5px;
 }
@@ -268,6 +270,7 @@ h3{
     width: 100%;
     margin: 5px;
 }
+
 .button-reset{
     margin-top: 10px;
     padding: 7px;
@@ -281,43 +284,53 @@ h3{
     margin-top: 5px;
     padding: 5px 0;
 }
+
 .top-text,.bottom-text,.select-fonts{
     width: 100%;
     padding: 5px;
 }
+
 .div-fontsize{
     display: flex;
     flex-direction: row;
     width: 100%;   
 }
+
 .fontsize{
     width: 50%;
     padding: 5px;
     margin-top: 5px;
 }
+
 .div-align{
     width: 50%;
 }
+
 .aling{
     padding: 6px;
     margin: 5px 0 0 5px ;
 }
+
 .div-color{
     display: flex;
     flex-direction: row;
     width: 100%;   
 }
+
 .text-color,.background-color{
     width: 50%;
     margin: 8px 0;
     /*border: solid 1px;*/
 }
+
 .text-color-input, .background-color-input{
    background-color: white;
 }
+
 .text-color-input .input-color{
     border:none;
 }
+
 .div-contour{
     display: flex;
     flex-direction: column;
@@ -326,19 +339,12 @@ h3{
 }
 
 .none , .light, .dark{
-    padding: 5px 12px;
-    margin-top: 5px;
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
 }
-
-
 
 /* -- ♣ Botones de Contorno ♣ -- */
 
-.none{
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-}
-
-.none{
+.none , .light, .dark{
     border-radius: 10px;
     color: #41444B;
     text-align: center;
@@ -347,54 +353,15 @@ h3{
     border:white;
     font-family: 'Cute Font';
     font-weight:400;
+    width: 32%;
+    font-size: 1em;
 }
-.none:hover{
-    background-position: right center; /* change the direction of the change here */
+
+.none:hover , .light:hover , .dark:hover{
+    background-position: right center;
     color: #fff;
     text-decoration: none;
 }
-
-.dark{
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-}
-
-.dark{
-    border-radius: 10px;
-    color: #41444B;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    border:white;
-    font-family: 'Cute Font';
-    font-weight:400;
-}
-.dark:hover{
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
-
-.light{
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
-}
-
-.light{
-    border-radius: 10px;
-    color: #41444B;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    border:white;
-    font-family: 'Cute Font';
-    font-weight:400;
-}
-.light:hover{
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
-
-
 
 /*-- ♣ ASIDE TEXT ♣ --*/
 
@@ -409,12 +376,9 @@ h3{
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
+    }
 
-    }
-    .meme-generator{
-        margin: 0 2em 0 4em;
-        height: 90%;
-    }
+
     #aside{
         position: relative;
         margin: 0 auto;
@@ -427,35 +391,22 @@ h3{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-
-    }
-    .meme-generator{
-        margin: 0 auto;
-       
-    }
-    #meme{
-        width: 610px;
-        height: 610px;
-    }
-    #img-meme{
-        width: 36.9em;
-        height: 38em;
-        
-    }
+    } 
+    
     #aside{
         width: 610px;
         align-content: center;
         font-size: 16px;
     }
+
     .background{
         display: flex;  
         flex-direction: column;
-        
     }
+
     .button-bg{
        
         justify-content: left;
-
     } 
     
 }
@@ -465,24 +416,28 @@ h3{
         display: flex;
         flex-direction: column;
         width: 620px
-        
     }
+
     .top-bar{
         flex-direction: column;
         margin: 10px;
     }
+
     #aside{
         width: 620px;
     }
+
     .div-contour{
         justify-content: center;
         align-items: center
     }
+
     .div-line-height{
         justify-content: center;
         margin: 20px auto;
         width: 120px;
     }
+
     #select-line-height{
         
         width: 150px;
@@ -493,6 +448,7 @@ h3{
         margin:20px auto;
         width: 120px;
     }
+
     #input-padding{
         
         width: 150px;
