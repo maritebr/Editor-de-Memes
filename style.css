@@ -1,30 +1,32 @@
 *{
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*font-family: ;
-    color: ;
-    background-color: ;
-    */
+    height: 80%;/*barra scroll*/
+    font-family:'Cute Font' ;
+    color:#41444B ;
+    background: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
 }
 
 /*-- ♣ HEADER ♣ --*/
 
 header{
-    border: 1px black solid;
-    background-color: pink; /*provisorio*/
-    width: 100%;
+    
     padding: 10px;
     text-align: center;
 }
 
-h1{
-    color: white; /*provisorio*/
+h1{ 
+    font-size: 4.5em;
+    letter-spacing: 0.1em;
+    font-weight: 590;
+    text-shadow: 0.05em 0.05em #ff6e7f  
 }
 
 .top-bar{
@@ -32,13 +34,126 @@ h1{
     margin: 10px;
 }
 
-.top-button{
-    padding: 2px 8px;
-    margin: 5px;
-    /*color: ;
-    background-color: ;
-    */
+/*gradientes botones*/
+.top-button {
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
 }
+
+.top-button {
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+}
+
+.top-button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-reset {
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+}
+
+.button-reset{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.button-reset:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.download{
+    border-radius: 10px;
+    color: #41444B;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border:white;
+    font-family: 'Cute Font';
+    font-size: 1.1em; 
+    font-weight:650;
+    letter-spacing: 0.1em;        
+
+}
+
+.download{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+
+}
+
+.download:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/*-- ♣ MODO CLARO♣ --*/
+
+.light-mode{
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);
+
+}
+
+/*-- ♣ MODO OSCURO♣ --*/
+
+.dark-mode{ 
+    color: white;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(53,132,202,1) 31%, rgba(3,13,15,1) 90%);
+ }
+
+.dark-mode h1{
+     color: #E5E5BE;
+     text-shadow: 0.05em 0.05em black;
+ }
+
+ .dark-mode .top-button, .dark-mode .download, .dark-mode .button-reset, .dark-mode .none, .dark-mode .light, .dark-mode .dark{
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+    color: white;
+}
+
+.dark-mode .top-button:hover, .dark-mode .download:hover, .dark-mode .button-reset:hover, .dark-mode .none:hover, .dark-mode .light:hover, .dark-mode .dark:hover{
+    background-position: right center;
+    color: #003973;
+    text-decoration: none;
+}
+.dark-mode .meme-text{
+    background-color:#04315d;
+}
+.span-color-change{
+    color: black;
+}
+
 
 /*-- ♣ MAIN MEME-GENERATOR ♣ --*/
 
@@ -49,30 +164,327 @@ main{
 }
 
 .meme-generator{
-    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: black; /*provisorio*/
+    padding: 10px;
+    background-color: rgb(0, 0, 0); /*provisorio*/
+    width: 590px;
+    overflow: hidden;
+    height: 590px;
+}
+#meme{
+    display: flex;
+    justify-content: center;
+    width: 565px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;  
+}
+
+img {
+    text-indent: -10000px
+}
+  /*para eliminar icono de imagen rota*/
+
+#img-meme{
+    width: 36.9em;
+    height: 27.5em;  
 }
 
 .meme-text{
     padding:20px 40px;
-    position: static;
+    position:static;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
-    /*font-family: ;
-    font-size: ;*/
-    background-color: pink; /*provisorio*/
+    font-size: 1.8em;
+    font-weight:650;
+    letter-spacing: 0.1em;
+    background-color:#ffc3e6;
 }
 
-.download{
-    background-color:#94ecc8;/*provisorio*/
-    border: 0px;
-    padding: 8px;
+/*-- ♣ aside ♣ --*/
+
+#aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 260px;
+    padding: 20px;
+    /*background-color: #eaffad;
+    background-image: linear-gradient(68deg, #eaffad 3%, #ffc3e6 52%, #d8ffee 95%);*/
+
+}
+
+.title-aside{
+    text-align: center;
+    padding: 20px ;
+    font-size: 2.2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/*-- ♣ ASIDE IMG ♣ --*/
+
+.url{
+    padding: 10px ;
+}
+
+.input-url{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+
+.background{
+    padding: 10px ;
+}
+
+.filters{
+    padding: 10px ;
+}
+
+.button-bg{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 5px;
+}
+.color-bg{
+    margin-right: 5px;
+}
+   
+.filters-bar{
+    display:flex;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+}
+.button-reset{
     margin-top: 10px;
-    border-radius: 3px;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+}
+
+/*-- ♣ ASIDE TEXT ♣ --*/
+
+.div-text,.div-fonts{
+    margin-top: 5px;
+    padding: 5px 0;
+}
+.top-text,.bottom-text,.select-fonts{
+    width: 100%;
+    padding: 5px;
+}
+.div-fontsize{
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+.fontsize{
+    width: 50%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.div-align{
+    width: 50%;
+}
+.aling{
+    padding: 6px;
+    margin: 5px 0 0 5px ;
+}
+.div-color{
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+.text-color,.background-color{
+    width: 50%;
+    margin: 8px 0;
+    /*border: solid 1px;*/
+}
+.text-color-input, .background-color-input{
+   background-color: white;
+}
+.text-color-input .input-color{
+    border:none;
+}
+.div-contour{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 10px;  
+}
+
+.none , .light, .dark{
+    padding: 5px 12px;
+    margin-top: 5px;
 }
 
 
+
+/* -- ♣ Botones de Contorno ♣ -- */
+
+.none{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.none{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.none:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.dark{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.dark{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.dark:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.light{
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)
+}
+
+.light{
+    border-radius: 10px;
+    color: #41444B;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border:white;
+    font-family: 'Cute Font';
+    font-weight:400;
+}
+.light:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/*-- ♣ ASIDE TEXT ♣ --*/
+
+ .text-editor {
+    display: none;
+}
+
+/*-- ♣ MediaQueries ♣ --*/
+
+@media(max-width: 1110px){
+    .general{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+    }
+   
+    #aside{
+        position: relative;
+        margin: 0 auto;
+        padding: 0.5em;    
+    }
+}
+
+@media(max-width: 960px){
+    .general{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+    
+ 
+    #aside{
+        width: 610px;
+        align-content: center;
+        font-size: 16px;
+    }
+    .background{
+        display: flex;  
+        flex-direction: column;
+        
+    }
+    .button-bg{
+       
+        justify-content: left;
+
+    } 
+    
+}
+
+@media(max-width: 620px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        width: 620px
+        
+    }
+    .top-bar{
+        flex-direction: column;
+        margin: 10px;
+    }
+    #aside{
+        width: 620px;
+    }
+    .div-contour{
+        justify-content: center;
+        align-items: center
+    }
+    .div-line-height{
+        justify-content: center;
+        margin: 20px auto;
+        width: 120px;
+    }
+    #select-line-height{
+        
+        width: 150px;
+    }
+    
+    .div-padding{
+        justify-content: center;
+        margin:20px auto;
+        width: 120px;
+    }
+    #input-padding{
+        
+        width: 150px;
+    }
+
+}
